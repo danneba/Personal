@@ -5,6 +5,13 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/vue/outline";
 
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 
+import img_test from "/src/assets/peter.png";
+import img_tes from "/src/assets/pet.jpg";
+import link from "/src/assets/linkedin.png";
+import face from "/src/assets/facebook.png";
+import what from "/src/assets/whatsapp.png";
+import gmail from "/src/assets/gmail.png";
+
 import "vue3-carousel/dist/carousel.css";
 
 const slides = [
@@ -90,7 +97,7 @@ const breakpoint = {
           >
             <div class="absolute -bottom-1 right-32 h-[361px] w-[365px]">
               <img
-                src="src/assets/peter.png"
+                :src="img_test"
                 alt=""
                 class="w-full h-full rounded-[50px]"
               />
@@ -278,17 +285,13 @@ const breakpoint = {
         <div
           class="rounded-full w-[63px] flex pt-4 h-[63px] mx-24 justify-center items-center"
         >
-          <img
-            src="src/assets/peter.jpg"
-            alt=" Emily's Photo"
-            class="rounded-full"
-          />
+          <img :src="img_tes" alt=" Emily's Photo" class="rounded-full" />
         </div>
         <div class="flex items-center justify-center gap-16 ml-96">
-          <img src="src/assets/linkedin.png" class="h-12" alt="linkedin" />
-          <img src="src/assets/facebook.png" class="h-12" alt="facebook" />
-          <img src="src/assets/whatsapp.png" class="h-12" alt="whatsapp" />
-          <img src="src/assets/gmail.png" class="h-12" alt="gmail" />
+          <img :src="link" class="h-12" alt="linkedin" />
+          <img :src="face" class="h-12" alt="facebook" />
+          <img :src="what" class="h-12" alt="whatsapp" />
+          <img :src="gmail" class="h-12" alt="gmail" />
         </div>
         <div class="flex ml-24 justify-center items-center">
           <p><span>© 2023</span>.All Rights Reserved</p>
